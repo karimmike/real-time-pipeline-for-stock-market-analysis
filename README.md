@@ -22,7 +22,7 @@ The result is a fully automated, end-to-end system for **streaming analytics** �
 
 ## 🏗️ Architecture  
 
-*(Insert architecture diagram here)*  
+![Architecture Diagram](stock_market.png)
 
 A modern, containerized architecture designed to process streaming data in real time and deliver analytics-ready datasets to business intelligence tools.  
 
@@ -52,4 +52,24 @@ A modern, containerized architecture designed to process streaming data in real 
 ---
 
 ## 📁 Recommended Repository Structure  
-
+real-time-stocks-pipeline/
+├── infra
+│   ├── producer/                     # Kafka producer (Finnhub API)
+│   │   └── producer.py
+│   ├── consumer/                     # Kafka consumer (MinIO sink)
+│   │   └── consumer.py
+│   ├── dag/
+│   │   └── minio_to_snowflake.py
+│   ├── docker-compose.yml            # Kafka, Zookeeper, MinIO, Airflow, Postgres
+├── dbt_stocks/models/
+│   ├── bronze
+│   │   ├── bronze_stg_stock_quotes.sql
+│   │   └── sources.yml
+│   ├── silver
+│   │   └── silver_clean_stock_quotes.sql
+│   └── gold
+│       ├── gold_candlestick.sql
+│       ├── gold_kpi.sql
+│       └── gold_treechart.sql
+├── requirements.txt
+└── README.md                     # Documentation
