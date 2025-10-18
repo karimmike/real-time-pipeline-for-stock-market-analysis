@@ -1,0 +1,158 @@
+[2025-10-12T12:32:41.486+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-12T12:32:41.524+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.load_snowflake scheduled__2025-10-12T12:27:00+00:00 [queued]>
+[2025-10-12T12:32:41.537+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.load_snowflake scheduled__2025-10-12T12:27:00+00:00 [queued]>
+[2025-10-12T12:32:41.539+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-12T12:32:41.558+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_snowflake> on 2025-10-12 12:27:00+00:00
+[2025-10-12T12:32:41.570+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'load_snowflake', 'scheduled__2025-10-12T12:27:00+00:00', '--job-id', '1221', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmpoqccv8vc']
+[2025-10-12T12:32:41.573+0000] {standard_task_runner.py:91} INFO - Job 1221: Subtask load_snowflake
+[2025-10-12T12:32:41.574+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=59166) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-12T12:32:41.576+0000] {standard_task_runner.py:64} INFO - Started process 59176 to run task
+[2025-10-12T12:32:41.637+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.load_snowflake scheduled__2025-10-12T12:27:00+00:00 [running]> on host e78fd7c8819f
+[2025-10-12T12:32:41.745+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='load_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2025-10-12T12:27:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-12T12:27:00+00:00'
+[2025-10-12T12:32:41.746+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-12T12:32:41.792+0000] {connection.py:408} INFO - Snowflake Connector for Python Version: 3.11.0, Python Version: 3.12.4, Platform: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2025-10-12T12:32:41.793+0000] {connection.py:1258} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-10-12T12:32:43.270+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760097974.json to Snowflake stage
+[2025-10-12T12:32:43.440+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760097983.json to Snowflake stage
+[2025-10-12T12:32:43.610+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760097992.json to Snowflake stage
+[2025-10-12T12:32:43.755+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098000.json to Snowflake stage
+[2025-10-12T12:32:43.984+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098010.json to Snowflake stage
+[2025-10-12T12:32:44.137+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098020.json to Snowflake stage
+[2025-10-12T12:32:44.880+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098029.json to Snowflake stage
+[2025-10-12T12:32:45.031+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098038.json to Snowflake stage
+[2025-10-12T12:32:45.162+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098047.json to Snowflake stage
+[2025-10-12T12:32:45.313+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098056.json to Snowflake stage
+[2025-10-12T12:32:45.441+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098064.json to Snowflake stage
+[2025-10-12T12:32:45.571+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098073.json to Snowflake stage
+[2025-10-12T12:32:45.720+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098082.json to Snowflake stage
+[2025-10-12T12:32:45.858+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098091.json to Snowflake stage
+[2025-10-12T12:32:45.983+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098101.json to Snowflake stage
+[2025-10-12T12:32:46.119+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098110.json to Snowflake stage
+[2025-10-12T12:32:46.254+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098119.json to Snowflake stage
+[2025-10-12T12:32:46.380+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098127.json to Snowflake stage
+[2025-10-12T12:32:46.519+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098137.json to Snowflake stage
+[2025-10-12T12:32:46.792+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098145.json to Snowflake stage
+[2025-10-12T12:32:46.925+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098154.json to Snowflake stage
+[2025-10-12T12:32:47.063+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098163.json to Snowflake stage
+[2025-10-12T12:32:47.193+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098403.json to Snowflake stage
+[2025-10-12T12:32:47.328+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098412.json to Snowflake stage
+[2025-10-12T12:32:47.615+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098422.json to Snowflake stage
+[2025-10-12T12:32:47.745+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098432.json to Snowflake stage
+[2025-10-12T12:32:47.891+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098441.json to Snowflake stage
+[2025-10-12T12:32:48.034+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098451.json to Snowflake stage
+[2025-10-12T12:32:48.161+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098461.json to Snowflake stage
+[2025-10-12T12:32:48.313+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098470.json to Snowflake stage
+[2025-10-12T12:32:48.434+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098480.json to Snowflake stage
+[2025-10-12T12:32:48.627+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098489.json to Snowflake stage
+[2025-10-12T12:32:48.772+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098499.json to Snowflake stage
+[2025-10-12T12:32:48.926+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098508.json to Snowflake stage
+[2025-10-12T12:32:49.082+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098517.json to Snowflake stage
+[2025-10-12T12:32:49.234+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098527.json to Snowflake stage
+[2025-10-12T12:32:49.378+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098536.json to Snowflake stage
+[2025-10-12T12:32:49.521+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098546.json to Snowflake stage
+[2025-10-12T12:32:49.664+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098556.json to Snowflake stage
+[2025-10-12T12:32:49.812+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098566.json to Snowflake stage
+[2025-10-12T12:32:49.941+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098575.json to Snowflake stage
+[2025-10-12T12:32:50.278+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098584.json to Snowflake stage
+[2025-10-12T12:32:50.400+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098594.json to Snowflake stage
+[2025-10-12T12:32:50.551+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098604.json to Snowflake stage
+[2025-10-12T12:32:50.726+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098614.json to Snowflake stage
+[2025-10-12T12:32:50.871+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098624.json to Snowflake stage
+[2025-10-12T12:32:51.025+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098634.json to Snowflake stage
+[2025-10-12T12:32:51.175+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098643.json to Snowflake stage
+[2025-10-12T12:32:51.318+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098653.json to Snowflake stage
+[2025-10-12T12:32:51.472+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098662.json to Snowflake stage
+[2025-10-12T12:32:51.624+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098672.json to Snowflake stage
+[2025-10-12T12:32:51.781+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098681.json to Snowflake stage
+[2025-10-12T12:32:51.937+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098691.json to Snowflake stage
+[2025-10-12T12:32:52.097+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098701.json to Snowflake stage
+[2025-10-12T12:32:52.242+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098710.json to Snowflake stage
+[2025-10-12T12:32:52.389+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098719.json to Snowflake stage
+[2025-10-12T12:32:52.572+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098728.json to Snowflake stage
+[2025-10-12T12:32:52.752+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098738.json to Snowflake stage
+[2025-10-12T12:32:52.977+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098747.json to Snowflake stage
+[2025-10-12T12:32:53.296+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098757.json to Snowflake stage
+[2025-10-12T12:32:53.488+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098767.json to Snowflake stage
+[2025-10-12T12:32:53.701+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098776.json to Snowflake stage
+[2025-10-12T12:32:53.975+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098785.json to Snowflake stage
+[2025-10-12T12:32:54.252+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098794.json to Snowflake stage
+[2025-10-12T12:32:54.485+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098804.json to Snowflake stage
+[2025-10-12T12:32:55.107+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098814.json to Snowflake stage
+[2025-10-12T12:32:55.370+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098823.json to Snowflake stage
+[2025-10-12T12:32:55.543+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098833.json to Snowflake stage
+[2025-10-12T12:32:55.703+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098842.json to Snowflake stage
+[2025-10-12T12:32:56.021+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098851.json to Snowflake stage
+[2025-10-12T12:32:56.184+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098860.json to Snowflake stage
+[2025-10-12T12:32:56.335+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098869.json to Snowflake stage
+[2025-10-12T12:32:56.512+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098878.json to Snowflake stage
+[2025-10-12T12:32:56.633+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098888.json to Snowflake stage
+[2025-10-12T12:32:56.772+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098897.json to Snowflake stage
+[2025-10-12T12:32:56.902+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098906.json to Snowflake stage
+[2025-10-12T12:32:57.040+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1760098915.json to Snowflake stage
+[2025-10-13T07:04:22.085+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D
+[2025-10-13T07:04:27.413+0000] {storage_client.py:318} WARNING - HEAD with url https://rrvy3ksfcb1stg.blob.core.windows.net/tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D failed for transient error: HTTPSConnectionPool(host='rrvy3ksfcb1stg.blob.core.windows.net', port=443): Max retries exceeded with url: /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe3f07c5b80>: Failed to establish a new connection: [Errno -5] No address associated with hostname'))
+[2025-10-13T07:04:31.421+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe409d07b00>: Failed to establish a new connection: [Errno -5] No address associated with hostname')': /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D
+[2025-10-13T07:04:37.430+0000] {storage_client.py:318} WARNING - HEAD with url https://rrvy3ksfcb1stg.blob.core.windows.net/tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D failed for transient error: HTTPSConnectionPool(host='rrvy3ksfcb1stg.blob.core.windows.net', port=443): Max retries exceeded with url: /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe409d075c0>: Failed to establish a new connection: [Errno -5] No address associated with hostname'))
+[2025-10-13T07:04:41.435+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe409d05340>: Failed to establish a new connection: [Errno -5] No address associated with hostname')': /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D
+[2025-10-13T07:04:49.440+0000] {storage_client.py:318} WARNING - HEAD with url https://rrvy3ksfcb1stg.blob.core.windows.net/tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D failed for transient error: HTTPSConnectionPool(host='rrvy3ksfcb1stg.blob.core.windows.net', port=443): Max retries exceeded with url: /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe409d06cf0>: Failed to establish a new connection: [Errno -5] No address associated with hostname'))
+[2025-10-13T07:04:53.442+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe3f03b9fa0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')': /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D
+[2025-10-13T07:05:05.446+0000] {storage_client.py:318} WARNING - HEAD with url https://rrvy3ksfcb1stg.blob.core.windows.net/tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D failed for transient error: HTTPSConnectionPool(host='rrvy3ksfcb1stg.blob.core.windows.net', port=443): Max retries exceeded with url: /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe409d2ec90>: Failed to establish a new connection: [Errno -5] No address associated with hostname'))
+[2025-10-13T07:05:05.452+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe409e2cc50>: Failed to establish a new connection: [Errno -2] Name or service not known')': /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D
+[2025-10-13T07:05:21.452+0000] {storage_client.py:318} WARNING - HEAD with url https://rrvy3ksfcb1stg.blob.core.windows.net/tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D failed for transient error: HTTPSConnectionPool(host='rrvy3ksfcb1stg.blob.core.windows.net', port=443): Max retries exceeded with url: /tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x7fe409d5d430>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-10-13T07:05:21.457+0000] {file_transfer_agent.py:606} ERROR - An exception was raised in <bound method SnowflakeStorageClient.prepare_upload of <snowflake.connector.azure_storage_client.SnowflakeAzureRestClient object at 0x7fe409d07d10>>
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/file_transfer_agent.py", line 603, in function_and_callback_wrapper
+    work(*args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/storage_client.py", line 223, in prepare_upload
+    self.preprocess()
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/storage_client.py", line 189, in preprocess
+    file_header = self.get_file_header(
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/azure_storage_client.py", line 121, in get_file_header
+    r = self._send_request_with_authentication_and_retry("HEAD", url, retry_id)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/azure_storage_client.py", line 108, in _send_request_with_authentication_and_retry
+    return self._send_request_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/storage_client.py", line 321, in _send_request_with_retry
+    raise RequestExceedMaxRetryError(
+snowflake.connector.errors.RequestExceedMaxRetryError: HEAD with url https://rrvy3ksfcb1stg.blob.core.windows.net/tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D failed for exceeding maximum retries.
+[2025-10-13T07:05:21.469+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-13T07:05:21.470+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/minio_to_snowflake.py", line 56, in load_to_snowflake
+    cur.execute(f"PUT file://{f} @%bronze_stock_quotes_raw")
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/cursor.py", line 1047, in execute
+    data = sf_file_transfer_agent.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/file_transfer_agent.py", line 740, in result
+    Error.errorhandler_wrapper(
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 345, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.OperationalError: 253003: 253003: While putting file(s) there was an error: 'HEAD with url https://rrvy3ksfcb1stg.blob.core.windows.net/tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D failed for exceeding maximum retries.', this might be caused by your access to the blob storage provider, or by Snowflake.
+[2025-10-13T07:05:21.484+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=minio_to_snowflake, task_id=load_snowflake, run_id=scheduled__2025-10-12T12:27:00+00:00, execution_date=20251012T122700, start_date=20251012T123241, end_date=20251013T070521
+[2025-10-13T07:05:21.500+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1221 for task load_snowflake (253003: 253003: While putting file(s) there was an error: 'HEAD with url https://rrvy3ksfcb1stg.blob.core.windows.net/tableszzef3b0545-421a-4d82-a48a-cd9796133431/1760098925.json.gz?sv=2021-04-10&se=2025-10-12T14%3A14%3A33Z&skoid=cdf4cca4-b20b-4f27-a3d3-155e980a072f&sktid=8b8389f7-0e38-4006-b754-f756e0ac6052&skt=2025-10-11T22%3A14%3A23Z&ske=2025-10-18T22%3A13%3A23Z&sks=b&skv=2021-04-10&sr=c&sp=racwdl&sig=OjQOuSZUaEBZAQTrS1d2jDitUp%2B9q30x1myHJD6Bx%2F8%3D failed for exceeding maximum retries.', this might be caused by your access to the blob storage provider, or by Snowflake.; 59176)
+[2025-10-13T07:05:21.523+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-10-13T07:05:21.537+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-13T07:05:21.539+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

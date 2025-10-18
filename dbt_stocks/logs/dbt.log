@@ -1,0 +1,30 @@
+[0m16:44:15.262909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEDFFE4C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEE1107ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEE11079D0>]}
+
+
+============================== 16:44:15.290974 | d3905676-4689-4b0c-8914-80f4b1b18e5f ==============================
+[0m16:44:15.290974 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:44:15.292451 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt init dbt_stocks', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\mike\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m16:44:15.341687 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\mike\.dbt
+[0m16:44:15.347932 [debug] [MainThread]: Starter project path: C:\Users\mike\real-time-gold-mds\venv\Lib\site-packages\dbt\include\starter_project
+[0m16:44:15.386639 [info ] [MainThread]: 
+Your new dbt project "dbt_stocks" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:44:15.387425 [info ] [MainThread]: Setting up your profile.
+[0m16:46:49.334987 [info ] [MainThread]: Profile dbt_stocks written to C:\Users\mike\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:46:49.336427 [debug] [MainThread]: Command `dbt init` succeeded at 16:46:49.336262 after 154.30 seconds
+[0m16:46:49.336847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEE31188A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEE276EC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEE30A99D0>]}
+[0m16:46:49.337293 [debug] [MainThread]: Flushing usage events
+[0m16:46:50.473758 [debug] [MainThread]: An error was encountered while trying to flush usage events
