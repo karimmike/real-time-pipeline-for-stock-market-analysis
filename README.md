@@ -52,6 +52,7 @@ A modern, containerized architecture designed to process streaming data in real 
 ---
 
 ## 📁 Recommended Repository Structure  
+```
 real-time-stocks-pipeline/
 ├── infra
 │   ├── producer/                     # Kafka producer (Finnhub API)
@@ -73,3 +74,4 @@ real-time-stocks-pipeline/
 │       └── gold_treechart.sql
 ├── requirements.txt
 └── README.md                     # Documentation
+```
